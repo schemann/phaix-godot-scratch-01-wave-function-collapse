@@ -23,9 +23,10 @@ that step. The project's main scene is the final step.
 
 ## Controls
 
-WASD or arrow keys or the left stick to walk, mouse or right stick to look, Space to jump,
-Esc gives the mouse back, a click captures it again. Further keys per tutorial are shown
-in the video and in the HUD.
+- There is no player: the scene builds a map of tiles on its own, one step at a time.
+- Space runs one step, and holding it keeps stepping; `step_time` in the Inspector sets the pace.
+- R makes a new map from the next seed, and `map_seed` in the Inspector picks the seed the scene starts on.
+- R works in every step, Space from `step_03_collapse`. There is no mouse or gamepad input.
 
 ## Tests
 
